@@ -22,9 +22,6 @@ public class hellojava {
       // parse it into a number
     int userResponseAsInt = Integer.parseInt(userResponseAsString);
 
-    console.printf(userResponseAsString + "\n");
-    console.printf(userResponseAsInt + "\n");
-
       // ---------Mad Libs Game---------
     if (userResponseAsInt == 1) {
       console.printf("You chose Mad Libs! Excellent choice!\n");
@@ -44,6 +41,10 @@ public class hellojava {
 
       console.printf("%s is a %s %s. ", name, adjective, noun);
       console.printf("They are always %s %s.\n", adverb, verb);
+    }
+
+    if (userResponseAsInt == 2) {
+      console.printf("You chose Rock, Paper, Scissors! Too bad that game isn't done yet.");
     }
   }
 }
