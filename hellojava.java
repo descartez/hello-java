@@ -12,10 +12,18 @@ public class hellojava {
       console.printf("    || Arcade ||\n");
       console.printf("    ------------\n\n");
       console.printf("    ----Games---\n");
-      console.printf("1. Rock, Paper, Scissors\n");
-      console.printf("2. Mad Libs\n");
+      console.printf("1. Mad Libs\n");
+      console.printf("2. Rock, Paper, Scissors (WIP)\n");
       console.printf("   --More to come!--\n\n");
       console.printf("-Select By Typing Number-\n");
-      String userResponse = console.readLine("> ");
+
+      // grab the user input
+      String userResponseAsString = console.readLine("> ");
+      // parse it into a number
+      int userResponseAsInt = Integer.parseInt(userResponseAsString);
+
+      console.printf(userResponseAsString + "\n");
+      console.printf(userResponseAsInt + "\n");
+
     }
 }
