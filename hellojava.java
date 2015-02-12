@@ -50,16 +50,20 @@ public class hellojava {
 
       String userChoice = console.readLine("> ");
 
-      if (userChoice.equalsIgnoreCase("rock")) {
+      if (userChoice.equalsIgnoreCase("rock") || userChoice.equals("0")) {
         console.printf("You chose rock! Strength and Honor!\n");
-      } else if (userChoice.equalsIgnoreCase("paper")) {
+      } else if (userChoice.equalsIgnoreCase("paper") || userChoice.equals("[]")) {
         console.printf("You chose paper! Wisdom and Adaptability!\n");
-      } else if (userChoice.equalsIgnoreCase("scissors")) {
+      } else if (userChoice.equalsIgnoreCase("scissors") || userChoice.equalsIgnoreCase("X")) {
         console.printf("You chose scissors! Truth and Justice!\n");
       } else {
         console.printf("None of those are choices, brave warrior.\n");
       }
 
+    }
+
+    else {
+      console.printf("None of those are options!\nPlease select by using the number of the game you want.\n");
     }
   }
 }
