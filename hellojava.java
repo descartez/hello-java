@@ -32,7 +32,7 @@ public class hellojava {
         noun.equalsIgnoreCase("jerk"));
       do {
         if (censorWord) {
-          console.printf("Watch your fucking language poonslayer. Try again\n\n");
+          console.printf("Watch your language poonslayer. Try again\n\n");
         };
       } while(censorWord);
 
@@ -44,7 +44,22 @@ public class hellojava {
     }
 
     if (userResponseAsInt == 2) {
-      console.printf("You chose Rock, Paper, Scissors! Too bad that game isn't done yet.");
+      console.printf("You chose Rock, Paper, Scissors!\n Welcome brave warrior!\n");
+      console.printf(" 0      []        X\n");
+      console.printf("ROCK?  PAPER?  SCISSORS?\n");
+
+      String userChoice = console.readLine("> ");
+
+      if (userChoice.equalsIgnoreCase("rock")) {
+        console.printf("You chose rock! Strength and Honor!\n");
+      } else if (userChoice.equalsIgnoreCase("paper")) {
+        console.printf("You chose paper! Wisdom and Adaptability!\n");
+      } else if (userChoice.equalsIgnoreCase("scissors")) {
+        console.printf("You chose scissors! Truth and Justice!\n");
+      } else {
+        console.printf("None of those are choices, brave warrior.\n");
+      }
+
     }
   }
 }
